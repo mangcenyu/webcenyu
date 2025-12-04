@@ -35,3 +35,24 @@ footer {
     background: #222;
     color: white;
 }
+.cert-img-wrapper {
+    width: 100%;
+    height: 160px; /* Tinggi kotak foto sertifikat */
+    overflow: hidden;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #eee;
+    background-color: #f0f0f0;
+}
+
+.cert-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Foto akan mengisi kotak dengan rapi (crop otomatis) */
+    transition: transform 0.5s ease;
+}
+
+/* Efek zoom saat kursor diarahkan ke sertifikat */
+.cert-card:hover .cert-img {
+    transform: scale(1.1);
+}
